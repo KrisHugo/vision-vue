@@ -4,8 +4,8 @@ import search from '../modules/search.vue';
 //例如:import 组件名称 from '组件路径';
 
 export default {
-  components: { search },
     //import引入的组件需要注入到对象中才能使用
+    components: { search },
     data() {
         //这里存放数据
         return {
@@ -19,23 +19,23 @@ export default {
 <template>
     <div class="leftSide">
         <div id="container">
-            <search></search>
+            <search />
         </div>
     </div>
 </template>
 
 
 <style lang='css' scoped>
-    .leftSide{
-        padding: 10px 0;
-        width:30%;
-        height:auto;
-        background: grey;
-    }
-    button{ 
-        height: 42px;
-        width: 42px;
-        position: absolute;
-    }
+.leftSide {
+    padding: 10px 0;
+    width: 30%;
+    height: auto;
+    /* background: grey; */
+}
 
+button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+}
 </style>

@@ -56,7 +56,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
   * {
     box-sizing: border-box;
@@ -88,5 +88,5 @@ nav a:first-of-type {
   }
 
   
-}
+} */
 </style>

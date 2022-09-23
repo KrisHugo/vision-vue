@@ -42,42 +42,48 @@ export default {
 <template>
     <div class='searchBar'>
         <form>
-            <input type="text" placeholder="search something you like..." />
             <button type="submit"></button>
+            <input type="text" placeholder="search...">
         </form>
     </div>
 </template>
 
 <style lang='css' scoped>
 .searchBar {
-    padding: 30px 0;
-    background: #7BA7AB;
+    display: inline-block;
+    padding: 30px 5%;
+    /* background: #7BA7AB; */
 }
 
 .searchBar form {
     height: 42px;
+    width: auto;
 }
 
 .searchBar input {
-    width: 20%;
+    width: 80%;
     font-size: 0.8rem;
     border: 2px solid #324B4E;
+    border-radius: 0.5rem;
     background-color: transparent;
-    transition: .3s linear;
-    float: right;
+    transition: .15s linear;
+    float: left;
+    padding-left: 20px;
 }
 
 .searchBar input:focus {
-    width: 25%;
+    width: 100%;
 }
 
 .searchBar button {
+    position: absolute;
     background: none;
-    top: -2px;
-    right: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
-.searchBar button::before{
+.searchBar button::before {
     content: "\f002";
     font-family: FontAwesome;
     color: #324b4e;

@@ -28,27 +28,25 @@ export default defineComponent({
 
 <template>
   <div class="about">
-    <div>
       <!-- <button @click="increment">
         Count is {{ count }}
       </button> -->
       <LeftSide></LeftSide>
-    </div>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
   }
-}
+} */
 
 form {
   position: relative;
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -59,7 +57,7 @@ button {
 }
 
 input {
-  width: 100%;
+  width: 90%;
   height: 42px;
   padding-left: 13px;
 }
