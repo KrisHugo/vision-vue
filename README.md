@@ -1,6 +1,16 @@
 # vision
 
-This template should help get you started developing with Vue 3 in Vite.
+这个和之前的vision respository是一个东西，但是想改用vue来实现。
+之前完全没搞明白的vue，现在勉勉强强能够实现了。
+总之下面的部署步骤我就不动他了，放在最底下。
+然后下面是开发日志：
+
+## Developing Journal
+Here's for noticing the important improvements about this project.
+### 0. Start-up
+Build a basement with the great help from vue + vite.
+There is still nothing which is what I want to achieve in this project named 'vision'.
+
 
 ## Recommended IDE Setup
 
