@@ -3,6 +3,8 @@
 
 import { defineComponent } from 'vue'
 import LeftSide from '../components/forum/LeftSide.vue'
+import Main from '../components/forum/Main.vue'
+import RightSide from '../components/forum/RightSide.vue'
 
 export default defineComponent({
   props: {
@@ -21,17 +23,19 @@ export default defineComponent({
       console.log(`The count is ${this.count}.`);
     }
   },
-  components: { LeftSide }
+  components: { LeftSide, Main, RightSide }
 })
 
 </script>
 
 <template>
   <div class="about">
-      <!-- <button @click="increment">
+    <!-- <button @click="increment">
         Count is {{ count }}
       </button> -->
       <LeftSide></LeftSide>
+      <Main></Main>
+      <RightSide></RightSide>
   </div>
 </template>
 
@@ -43,6 +47,10 @@ export default defineComponent({
     align-items: center;
   }
 } */
+.about {
+  box-sizing: border-box;
+  display: flex;
+}
 
 form {
   position: relative;

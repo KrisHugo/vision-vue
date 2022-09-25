@@ -42,25 +42,31 @@ export default {
 <template>
     <div class='searchBar'>
         <form>
-            <button type="submit"></button>
             <input type="text" placeholder="search...">
+            <button type="submit"></button>
         </form>
+        <p class="subtle">order by</p>
+        <button type="button">Latest</button>
     </div>
 </template>
 
-<style lang='css' scoped>
+<style lang="css" scoped>
+
 .searchBar {
     display: inline-block;
     padding: 30px 5%;
+    width: 100%;
     /* background: #7BA7AB; */
 }
 
 .searchBar form {
     height: 42px;
     width: auto;
+    width: 90%;
 }
 
 .searchBar input {
+    left: 10%;
     width: 80%;
     font-size: 0.8rem;
     border: 2px solid #324B4E;
@@ -72,18 +78,25 @@ export default {
 }
 
 .searchBar input:focus {
+    left: 0%;
     width: 100%;
 }
 
-.searchBar button {
+.searchBar input+button {
     position: absolute;
     background: none;
     top: 0;
-    left: 0;
+    left: 10%;
     height: 100%;
+    transition: .15s linear;
 }
 
-.searchBar button::before {
+.searchBar input:focus+button[type='submit'] {
+    left: 0;
+}
+
+
+.searchBar button[type='submit']::before {
     content: "\f002";
     font-family: FontAwesome;
     color: #324b4e;

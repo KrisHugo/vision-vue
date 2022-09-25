@@ -10,7 +10,10 @@ Here's for noticing the important improvements about this project.
 ### 0. Start-up
 Build a basement with the great help from vue + vite.
 There is still nothing which is what I want to achieve in this project named 'vision'.
-
+#### 0.1. Forum Layout
+I've tried to make the page responsive, but it's a truly hardwork.
+Another task is to build some component with soft animation.
+And yes, I already get a satisfied component - queryBar/searchBar with great animate reaction while I try to focus on it.
 
 ## Recommended IDE Setup
 

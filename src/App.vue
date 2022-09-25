@@ -56,6 +56,8 @@ nav a:first-of-type {
   border: 0;
 }
 
+/* 改成v-bind形式,通过路由变换来修改class实际属性,实现index和about之间的页面响应式切换 */
+
 /* @media (min-width: 1024px) {
 
   * {
