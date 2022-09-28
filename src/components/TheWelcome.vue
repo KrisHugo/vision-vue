@@ -1,3 +1,6 @@
+<!-- 
+  The welcome 负责 将 WelcomeItem 模板实现，WelcomeItem 模板设计具体的复杂元素样式
+ -->
 <script setup lang="ts">
 import WelcomeItem from "./WelcomeItem.vue";
 import DocumentationIcon from "./icons/IconDocumentation.vue";
