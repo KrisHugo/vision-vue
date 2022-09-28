@@ -14,19 +14,20 @@ export default {
                 { id: 1, name:"Popular"},
                 { id: 2, name:"Oldest"},
             ],
-            topics: [
-                { id: 1, name: "computer", age: 18, sex: "女" },
-                { id: 2, name: "mobile", age: 19, sex: "女" },
-                { id: 3, name: "website", age: 20, sex: "男" },
-                { id: 4, name: "game-console", age: 21, sex: "男" },
-            ], 
             categories: [
-                { id: 1, name: "computer", age: 18, sex: "女" },
-                { id: 2, name: "mobile", age: 19, sex: "女" },
-                { id: 3, name: "website", age: 20, sex: "男" },
-                { id: 4, name: "game-console", age: 21, sex: "男" },
-                { id: 4, name: "game-console", age: 21, sex: "男" },
+                { id: 1, name: "PC", post: 100},
+                { id: 2, name: "Andriod", post: 100},
+                { id: 3, name: "Website", post: 100},
+                { id: 4, name: "Game-Console", post: 100},
+                { id: 5, name: "IOS", post: 100},
             ], 
+            topics: [
+                { id: 1, name: "bugs", post: 30},
+                { id: 2, name: "memes", post: 10},
+                { id: 3, name: "dev-logs", post: 50},
+                { id: 4, name: "games", post: 600},
+            ], 
+            
             search: {
                 keyword: '',
                 order: 0,
@@ -85,7 +86,7 @@ export default {
                 <ul>
                     <li v-for="(k,index) in categories" :key="k.id">
                         <input type="radio" :id="k.id" name="categories" :value="k.id" />
-                        <label :for="k.id">{{k.name}}-{{k.age}}-{{k.sex}}</label>
+                        <label :for="k.id">{{k.name}} Hot:{{k.post}}</label>
                     </li>
                 </ul>
             </div>
@@ -101,7 +102,7 @@ export default {
                 <ul>
                     <li v-for="(k,index) in topics" :key="k.id">
                         <input type="radio" :id="k.id" name="topic" :value="k.id" />
-                        <label :for="k.id">{{k.name}}-{{k.age}}-{{k.sex}}</label>
+                        <label :for="k.id">{{k.name}} Hot:{{k.post}}</label>
                     </li>
                 </ul>
             </div>
