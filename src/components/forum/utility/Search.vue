@@ -134,13 +134,13 @@ export default {
 .searchBar input {
     left: 10%;
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border: 2px solid #324B4E;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     background-color: transparent;
     transition: .15s ease-in-out;
     float: left;
-    padding-left: 25px;
+    padding: 3% 1rem 3% 2.1rem;
 }
 
 .searchBar input:focus {
@@ -148,17 +148,17 @@ export default {
     width: 100%;
 }
 
-.searchBar input+button {
+.searchBar input~button {
     position: absolute;
     background: none;
     top: 0;
-    left: 11%;
+    left: 2.4rem;
     height: 100%;
     transition: .15s ease-in-out;
 }
 
 .searchBar input:focus+button[type='submit'] {
-    left: 1%;
+    left: 3%;
 }
 
 
