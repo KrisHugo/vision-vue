@@ -23,9 +23,11 @@ export default {
 <style lang='css' scoped>
 .MainForum {
     padding: 10px 0;
-    width: 58%;
+    width: 50%;
     height: auto;
-    background: grey;
+    background: rgba(173, 239, 255, 0.226);
+    margin: 0 3%;
+    border-radius: 15px
 }
 
 </style>

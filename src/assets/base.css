@@ -19,11 +19,15 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --main-blue-color:rgb(61, 90, 241);
+  --main-grey-color:rgb(244, 245, 250);
+  --app-transition-color: linear-gradient(to right, var(--main-grey-color), var(--main-blue-color));
 }
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
+  --color-background: var(--app-transition-color);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
 

@@ -25,12 +25,17 @@ export default {
 
 <style lang='css' scoped>
 .leftSide {
+    margin-left: 3%;
+    
     padding: 10px 0;
     width: 20%;
     height: auto;
-    background: lightblue;
+    background: var(--main-grey-color);
+    opacity: 0.9;
     /* background: grey; */
     min-height: 1024px;
+    border-radius: 30px;
+    
 }
 
 button {

@@ -35,8 +35,8 @@ Then continue to slowly add page styles and transition animation effects.
 
 **Bugs:**
 
-- It seems that if the default format of the radio is removed, it seems to become unclickable, very strange, I still need to continue to test how to achieve a good basic radio effect, if all use the button to achieve the effect will probably be very unpleasant
-
+- It seems that if the default format of the radio is removed, it seems to become unclickable, very strange, I still need to continue to test how to achieve a good basic radio effect, if all use the button to achieve the effect will probably be very unpleasant. **The reason is that I didn't use "the id used in for of the label" correctly**
+- Find a function to make a multicolor blended background
 # * 运行附录
 
 ## Recommended IDE Setup
