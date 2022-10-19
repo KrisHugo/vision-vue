@@ -7,7 +7,6 @@ export default {
     data() {
         //这里存放数据
         return {
-
         };
     }
 }
@@ -23,9 +22,11 @@ export default {
 <style lang='css' scoped>
 .RightSide {
     padding: 10px 0;
-    width: 20%;
+    width: 18%;
     height: auto;
-    background: lightblue;
+    background: rgba(173, 216, 230, 0.2);
+    border-radius: 20px;
+    margin-right: 3%;
 }
 
 </style>

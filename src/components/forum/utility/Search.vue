@@ -2,7 +2,6 @@
 //这里可以导入其他文件(比如:组件,工具js,第三方插件js,json文件,图片文件等等)
 //例如:import 组件名称 from '组件路径';
 
-
 export default {
     // components: {},
     data() {
@@ -26,35 +25,28 @@ export default {
                 { id: 3, name: "dev-logs", post: 50 },
                 { id: 4, name: "games", post: 600 },
             ],
-
-            search: {
-                keyword: '',
-                order: 0,
-                categories: 0,
-                topics: 0,
-            },
-
-            posts: [
-
-            ],
         };
     },
     // //监听属性 类似于data概念
     // computed: {},
     // //监控data中的数据变化
-    // watch: {},
+    watch: {
+    },
     // //方法集合
-    // methods: {
-
-    // },
+    methods: {
+        // 数值变动触发，更新数据至父级，父级进行修改
+        onSearchChange(){
+            //如何联动父元素呢?
+        }
+    },
     // //生命周期 - 创建完成(可以访问当前this实例)
     // created() {
 
     // },
-    // //生命周期 - 挂载完成(可以访问DOM元素)
-    // mounted() {
-
-    // },
+    //生命周期 - 挂载完成(可以访问DOM元素)
+    mounted() {
+        // 
+    },
     // beforeCreate() { }, //生命周期 - 创建之前
     // beforeMount() { }, //生命周期 - 挂载之前
     // beforeUpdate() { }, //生命周期 - 更新之前
@@ -90,7 +82,7 @@ export default {
             <div id="CategoriesList" class="content">
                 <ul>
                     <li v-for="(k,index) in categories" :key="k.id">
-                        <input type="radio" :id="'category'+k.id" name="categories" :value="k.id" />
+                        <input type="radio" :id="'category'+k.id" name="categories" :value="k.id" @click="search.categories = k.id" />
                         <label :for="'category'+k.id">{{k.name}}</label>
                     </li>
                 </ul>
@@ -106,7 +98,7 @@ export default {
             <div id="TopicsLists" class="content">
                 <ul>
                     <li v-for="(k,index) in topics" :key="k.id">
-                        <input type="radio" :id="'topic'+k.id" name="topic" :value="k.id" />
+                        <input type="radio" :id="'topic'+k.id" name="topic" :value="k.id"  @click="search.topics = k.id" />
                         <label :for="'topic'+k.id">{{k.name}}</label>
                     </li>
                 </ul>
